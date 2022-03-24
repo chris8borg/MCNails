@@ -1,0 +1,55 @@
+body {
+  margin: 0mm;
+  font-family: "Lora", serif;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 8, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", serif;
+}
+.cover {
+  height: 470px;
+  background-image: url(https://cdn.glitch.global/08d92209-94cc-4b7d-bd6f-1f68c0023b53/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg?v=1647991024821);
+  background-size: cover;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.1em #333333;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 8, 0.2);
+}
+
+.cover2 {
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em #333333;
+  background-position: center;
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.86);
+}
+
+.cover-small {
+  height: 300px;
+  background-blend-mode: normal;
+}
+
+.cardtitle {
+  min-height: 3rem;
+}
+
+.cardtext {
+  min-height: 15rem;
+}
+
+.orange-button {
+   background-color: #E88717;
+  border-color: gray;
+  color: white;
+}
