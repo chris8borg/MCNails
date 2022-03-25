@@ -37,6 +37,11 @@ h5 {
   background-position: center;
 }
 
+.cover3 {
+  color: #e88717;
+  text-shadow: 0em 0em 0.1em white;
+}
+
 .card {
   border: 0 !important;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -101,12 +106,49 @@ hr.rounded {
 }
 
 @media screen and (max-width: 979px) {
-    div.corousel-inner.my-inner {       
-        border-top: 10px;
-        border-left: 10px;
-        border-right: 10px;
-        border-bottom: 00px;
-        border-color: #ffffff;
-        border-style: solid;
-    }
-}   
+  div.corousel-inner.my-inner {
+    border-top: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-bottom: 00px;
+    border-color: #ffffff;
+    border-style: solid;
+  }
+}
+
+.responsive-iframe {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  color:  #e88717;
+    text-shadow: 0px 0px 1px black;
+}
+
+.navbar-brand:hover {
+	color: #c24244;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled {
+  background-color: #ffede7;
+}
