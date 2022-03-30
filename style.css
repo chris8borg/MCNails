@@ -38,8 +38,20 @@ h5 {
 }
 
 .cover3 {
-  color: #e88717;
-  text-shadow: 0em 0em 0.1em white;
+  color: #e88717!important;
+    text-shadow: 0.1em 0.1em 0.2em #333333;
+  font-weight: bold;
+}
+
+.cover4 {
+  height: 470px;
+  background-image: url(https://cdn.glitch.global/08d92209-94cc-4b7d-bd6f-1f68c0023b53/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg?v=1647991024821);
+  background-size: cover;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.1em #333333;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 8, 0.2);
 }
 
 .card {
@@ -53,12 +65,12 @@ h5 {
   background-blend-mode: normal;
 }
 
-.cardtitle {
+.card-title {
   min-height: 3rem;
 }
 
-.cardtext {
-  min-height: 10rem;
+.card-text {
+  min-height: 8rem;
 }
 
 .orange-button {
@@ -131,12 +143,12 @@ hr.rounded {
 
 .navbar-brand {
   letter-spacing: 3px;
-  color:  #e88717;
-    text-shadow: 0px 0px 1px black;
+  color: #e88717;
+  text-shadow: 0px 0px 1px black;
 }
 
 .navbar-brand:hover {
-	color: #c24244;
+  color: #c24244;
 }
 
 .navbar-scroll .nav-link,
@@ -152,3 +164,328 @@ hr.rounded {
 .navbar-scrolled {
   background-color: #ffede7;
 }
+
+body {
+  margin-top: 20px;
+  background: white;
+}
+
+/*
+* @subsection Shop
+*/
+.product {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product .caption {
+  margin-top: 15px;
+}
+
+.product .caption h6 {
+  color: #455a64;
+}
+
+.product .caption .price + .price {
+  margin-left: 15px;
+}
+
+.product.tumbnail {
+  box-shadow: 0 5px 25px 0 transparent;
+  transition: 0.3s linear;
+  padding-top: 0;
+}
+
+.product.tumbnail img:hover {
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.single-product span {
+  display: inline-block;
+}
+
+.single-product .rating .fa-star,
+.single-product .rating .fa-star-o {
+  font-size: 16px;
+  color: #f7d4a0;
+  margin-left: 2px;
+}
+
+.single-product .rating + * {
+  margin-left: 15px;
+}
+
+.single-product h1.h1-variant-2 {
+  margin-bottom: 20px;
+}
+
+.single-product .caption:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.single-product .caption span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.single-product .caption .price {
+  font-weight: 400;
+}
+
+.single-product .caption .price.sale {
+  color: #e75854;
+  font-size: 33px;
+}
+
+.single-product .caption * + .price {
+  margin-left: 10.8%;
+}
+
+@media (max-width: 1199px) {
+  .single-product .caption * + .price {
+    margin-left: 7.8%;
+  }
+}
+
+.single-product .caption * + .quantity {
+  margin-left: 26px;
+}
+
+.single-product .caption .info-list {
+  border-bottom: 1px solid #f3f3ed;
+  border-top: 1px solid #f3f3ed;
+  font-family: Montserrat, sans-serif;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  text-align: left;
+}
+
+.single-product .caption .info-list dt,
+.single-product .caption .info-list dd {
+  display: inline-block;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.single-product .caption .info-list dt {
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: #a7b0b4;
+  width: 35%;
+  text-transform: uppercase;
+}
+
+.single-product .caption .info-list dd {
+  font-size: 15px;
+  color: #565452;
+  width: 62.5%;
+}
+
+.single-product .caption .share span.small {
+  margin-top: 9px;
+}
+
+@media (max-width: 991px) {
+  .single-product .caption .share span.small {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-product .table-mobile tr {
+    padding-top: 0;
+  }
+  .single-product .table-mobile tr:before {
+    display: none;
+  }
+}
+
+.price {
+  display: inline-block;
+  font-size: 15px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #2b2f3e;
+}
+
+.price.sale {
+  color: #e75854;
+}
+
+.price del {
+  color: #b0bec5;
+}
+
+.quantity {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  background: #eceff1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 82px;
+  height: auto;
+  display: inline-block;
+}
+
+.quantity span {
+  display: inline-block;
+}
+
+.quantity .num {
+  width: 26px;
+}
+
+.quantity [class*="fa-"] {
+  padding-top: 4px;
+  width: 22px;
+  padding-bottom: 4px;
+  color: #b0bec5;
+  cursor: pointer;
+}
+
+.quantity [class*="fa-"]:hover {
+  color: #455a64;
+}
+
+/*
+* error
+*/
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+body {
+  background: #f0f0f0 !important;
+}
+.page-404 .outer {
+  position: absolute;
+  top: 0;
+
+  display: table;
+
+  width: 100%;
+  height: 100%;
+}
+.page-404 .outer .middle {
+  display: table-cell;
+
+  vertical-align: middle;
+}
+.page-404 .outer .middle .inner {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.page-404 .outer .middle .inner .inner-circle {
+  height: 300px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.page-404 .outer .middle .inner .inner-circle:hover i {
+  color: #39bbdb !important;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 0 15px #39bbdb;
+}
+.page-404 .outer .middle .inner .inner-circle:hover span {
+  color: #39bbdb;
+}
+.page-404 .outer .middle .inner .inner-circle i {
+  font-size: 5em;
+  line-height: 1em;
+
+  float: right;
+
+  width: 1.6em;
+  height: 1.6em;
+  margin-top: -0.7em;
+  margin-right: -0.5em;
+  padding: 20px;
+
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-align: center;
+
+  color: #f5f5f5 !important;
+  border-radius: 50%;
+  background-color: #39bbdb;
+  box-shadow: 0 0 0 15px #f0f0f0;
+}
+.page-404 .outer .middle .inner .inner-circle span {
+  font-size: 11em;
+  font-weight: 700;
+  line-height: 1.2em;
+
+  display: block;
+
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-align: center;
+
+  color: #e0e0e0;
+}
+.page-404 .outer .middle .inner .inner-status {
+  font-size: 20px;
+
+  display: block;
+
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+  text-align: center;
+
+  color: #39bbdb;
+}
+.page-404 .outer .middle .inner .inner-detail {
+  line-height: 1.4em;
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: #999999;
+}
+
+.text-custom {
+  color: #e88717 !important;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.badge {
+  padding: 1px 5px 2px;
+  font-size: 12.025px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #e88717!important;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 5px;
+  }
+  
