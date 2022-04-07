@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <title>MC NAILS</title>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/08d92209-94cc-4b7d-bd6f-1f68c0023b53/ce8adcb6-bad7-4ac3-afbb-ab66b8b39a56.ico?v=1649205121078"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="wea.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
@@ -36,9 +40,9 @@
           <button
             class="navbar-toggler ps-0"
             type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -46,7 +50,7 @@
               <i class="fas fa-bars"></i>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active">
                 <a class="nav-link px-3" href="index.html">Inicio</a>
@@ -91,6 +95,9 @@
           </div>
         </div>
       </nav>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
       <div
         class="cover d-flex justify-content-center align-items-center flex-column"
       >
@@ -102,138 +109,28 @@
           </button>
         </a>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.943/build/pdf.min.js"></script>
     </header>
-    <section>
-      <div class="container bootstrap snipets">
-        <h1 class="text-center text-muted cover3">Productos</h1>
-        <div class="row flow-offset-1">
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img class="cover cover-small"
-                  src="https://cdn.glitch.global/08d92209-94cc-4b7d-bd6f-1f68c0023b53/a55.jpeg?v=1648270339671"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">PRACTI KIT</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img class="cover cover-small"
-                  src="https://via.placeholder.com/350x280/87CEFA/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/FF7F50/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/20B2AA/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/8A2BE2/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/6495ED/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/00008B/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/9932CC/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="product tumbnail thumbnail-3">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/350x280/FF69B4/000000"
-                  alt=""
-              /></a>
-              <div class="caption">
-                <h6><a href="#">Short Sleeve T-Shirt</a></h6>
-                <span class="price"> <del>$24.99</del></span
-                ><span class="price sale">$12.49</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <canvas id="my_canvas"></canvas>
+    <script>
+    pdfjsLib.getDocument('https://cdn.glitch.global/08d92209-94cc-4b7d-bd6f-1f68c0023b53/MC%20CATALAGO%20ABRIL6_compressed.pdf?v=1649315419040').then(doc=> {
+      console.log("This file has " + doc._pdfInfo.numPages + "pages");
+      
+      doc.getPage(1).then(page =>{
+        var myCanvas= document.getElementById("my_canva");
+        var context = myCanvas.getContext("2d");
+        
+        var viewport= page.getViewport(2, -90);
+        myCanvas.Width = Viewport.width;
+        myCanvas.height = viewport.height;
+        
+        page.render({
+          cannvasContext: context,
+          viewport: viewport
+        })
+      })
+    });
+    </script>
   </body>
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-light text-muted">
@@ -250,28 +147,21 @@
       <!-- Right -->
       <div>
         <a
+          style="text-decoration: none"
           href="https://www.facebook.com/MCNailsHermosillo"
           class="me-4 text-reset"
         >
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="" class="me-4 text-reset disabled">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset disabled">
-          <i class="fab fa-google"></i>
+        <a style="text-decoration: none" href="" class="me-4 text-reset">
+          <i class="fab fa-whatsapp"></i>
         </a>
         <a
+          style="text-decoration: none"
           href="https://www.instagram.com/mcnailshermosillo/?hl=es-la"
           class="me-4 text-reset"
         >
           <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset disabled">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/chris8borg" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
         </a>
       </div>
       <!-- Right -->
@@ -304,15 +194,6 @@
               <a href="catalogo.html" class="text-reset"
                 >productos para uñas.</a
               >
-            </p>
-            <p>
-              <a href="#!" class="text-reset">(PROD OR SERVICE)</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">(PROD OR SERVICE)</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">(PROD OR SERVICE)</a>
             </p>
           </div>
           <!-- Grid column -->
